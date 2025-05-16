@@ -87,6 +87,10 @@ html {
   text-align: center;
   margin-top: 48px;
 }
+.top__link:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(32, 32, 39);
+}
 
 .running-line {
   width: 3220px;
@@ -138,9 +142,29 @@ html {
 
 .card-box {
   padding-top: 72px;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: row;
   gap: 32px;
+  position: relative;
+}
+.card-box-vector_1 {
+  position: absolute;
+  height: 584.72px;
+  top: -215px;
+  right: -262px;
+  z-index: 1;
+}
+.card-box-vector_2 {
+  position: absolute;
+  top: 478px;
+  left: -91px;
+}
+.card-box-vector_3 {
+  position: absolute;
+  top: 518px;
+  left: -73px;
+  height: 54.6px;
 }
 .card-box-1 {
   display: flex;
@@ -148,6 +172,9 @@ html {
   row-gap: 32px;
 }
 
+.game-card {
+  z-index: 5;
+}
 .game-card__content {
   width: 378px;
   height: 473px;
@@ -182,4 +209,7 @@ html {
   text-align: left;
   margin-left: 32px;
   margin-top: 16px;
+}
+.game-card:hover {
+  transform: scale(1.05);
 }/*# sourceMappingURL=style.css.map */

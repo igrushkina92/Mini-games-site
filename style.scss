@@ -89,6 +89,10 @@ $color-text:rgb(32, 32, 39);
         font-weight: 600;
         text-align: center;
         margin-top: 48px;
+        &:hover {
+            background: rgb(255, 255, 255);
+            color: $color-text;
+        }
     }
   }
 
@@ -122,6 +126,7 @@ $color-text:rgb(32, 32, 39);
   .games {
     &__container {
         background: rgb(32, 32, 39);
+
     }
     &__title {
         color: rgb(255, 255, 255);
@@ -145,9 +150,35 @@ $color-text:rgb(32, 32, 39);
  
   .card-box {
     padding-top: 72px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: row;
     gap: 32px;
+    position: relative;
+
+     &-vector {
+            &_1 {
+                position: absolute;
+                height: 584.72px;
+                top: -215px;
+                right: -262px;
+                z-index: 1;
+            }
+            &_2 {
+                position: absolute;
+                top: 478px;
+                left: -91px;
+            
+            }
+             &_3 {
+                position: absolute;
+                top: 518px;
+                left: -73px;
+                height: 54.6px;
+            
+            }
+        }
+
     &-1 {
         display: flex;
         flex-direction: column;
@@ -157,7 +188,7 @@ $color-text:rgb(32, 32, 39);
   }
 
   .game-card {
-
+    z-index: 5;
     &__content {
         width: 378px;
         height: 473px;
@@ -194,5 +225,8 @@ $color-text:rgb(32, 32, 39);
         text-align: left;
         margin-left: 32px;
         margin-top: 16px;
+    }
+    &:hover {
+        transform: scale(1.05);
     }
   }
