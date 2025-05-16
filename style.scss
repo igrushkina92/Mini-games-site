@@ -121,6 +121,78 @@ $color-text:rgb(32, 32, 39);
 
   .games {
     &__container {
-        
+        background: rgb(32, 32, 39);
+    }
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 94px;
+    }
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 24px;
+    }
+  }
+ 
+  .card-box {
+    padding-top: 72px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    &-1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+    }
+  }
+
+  .game-card {
+
+    &__content {
+        width: 378px;
+        height: 473px;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        &_big {
+            height: 551px;
+        }
+        &_middle {
+            height: 512px;
+        }
+    }
+
+    &__number {
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        color: $color-text;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 35px;
+        width: 108px;
+        height: 36px;
+        margin-left: 32px;
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    &__title {
+        color: $color-text;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 32px;
+        margin-top: 16px;
     }
   }
