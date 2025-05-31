@@ -1,0 +1,240 @@
+$color-text:rgb(32, 32, 39);
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+    body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .center {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  html { overflow-x: hidden; }
+
+  .top {
+    height: 710px;
+    background-color: rgb(225, 255, 143);
+    position: relative;
+
+    &__vector {
+        &_5 {
+            position: absolute;
+            top: -334px;
+            right: -488px;
+            overflow-x: hidden;
+        }
+         &_1 {
+            position: absolute;
+            top: 94px;
+            left: 63px;
+            height: 57px;
+        }
+         &_2 {
+            position: absolute;
+            top: 69px;
+            left: 156px;
+            height: 35px;
+        }
+         &_3 {
+            position: absolute;
+            height: 83px;
+            right: 344px;;
+            top: 568px;
+         }
+          &_4 {
+            position: absolute;
+            height: 37px;
+           right: 455px;
+            top: 538px;
+         }
+         &_6 {
+            display: none;
+            height: 238px;
+         }
+    }
+    &__title {
+        color: $color-text;
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 196px;
+    }
+    &__text {
+        color: $color-text;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 24px;
+    }
+    &__link {
+        width: 247px;
+        height: 66px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid $color-text;
+        border-radius: 60px;
+        background: $color-text;
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 48px;
+        &:hover {
+            background: rgb(255, 255, 255);
+            color: $color-text;
+        }
+    }
+  }
+
+  .running-line {
+        width: 3220px;
+        height: 90px;
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(50px);
+        background: rgb(188, 236, 48);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 51px;
+
+        &__text {
+            color: $color-text;
+            font-size: 30px;
+            font-weight: 700;
+            line-height: 110%;
+            letter-spacing: 4%;
+            text-align: left;
+            text-transform: uppercase;
+        }
+       
+        &__img {
+            height: 36px;
+        }
+  }
+
+  .games {
+    &__container {
+        background: rgb(32, 32, 39);
+
+    }
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-top: 94px;
+    }
+    &__text {
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-top: 24px;
+    }
+  }
+ 
+  .card-box {
+    padding-top: 72px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    position: relative;
+
+     &-vector {
+            &_1 {
+                position: absolute;
+                height: 584.72px;
+                top: -215px;
+                right: -262px;
+                z-index: 1;
+            }
+            &_2 {
+                position: absolute;
+                top: 478px;
+                left: -91px;
+            
+            }
+             &_3 {
+                position: absolute;
+                top: 518px;
+                left: -73px;
+                height: 54.6px;
+            
+            }
+        }
+
+    &-1 {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+    }
+  }
+
+  .game-card {
+    z-index: 5;
+    &__content {
+        width: 378px;
+        height: 473px;
+        border-radius: 30px;
+        background-color: rgb(255, 255, 255);
+        &_big {
+            height: 551px;
+        }
+        &_middle {
+            height: 512px;
+        }
+    }
+
+    &__number {
+        border-radius: 52.58px;
+        background: rgb(247, 247, 247);
+        color: $color-text;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 35px;
+        width: 108px;
+        height: 36px;
+        margin-left: 32px;
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    &__title {
+        color: $color-text;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 39px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin-left: 32px;
+        margin-top: 16px;
+    }
+    &:hover {
+        transform: scale(1.05);
+    }
+  }
+
+
+    @import "mobile";

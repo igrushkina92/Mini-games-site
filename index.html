@@ -4,8 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">  
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, world!</h1>
+   <div class="top center">
+        <div class="top__content">
+            <h1 class="top__title"> Добро пожаловать <br/> на мой сайт мини-игр</h1>
+            <p class="top__text"> Тебе предстоит пройти несколько увлекательных игр. <br/>Если готов, нажимай <b>«Поехали!»</b> и <b>приступай.</b>.</p>
+            <a class="top__link" href="#games">Поехали!</a>
+
+            <img class="top__vector top__vector_1" src="img/Star-2.png" alt="star">
+            <img class="top__vector top__vector_2" src="img/Star-3.png" alt="star">
+            <img class="top__vector top__vector_3" src="img/Star-4.png" alt="star">
+            <img class="top__vector top__vector_4" src="img/Star-5.png" alt="star">
+            <img class="top__vector top__vector_5" src="img/Star-group.png" alt="star">
+            <img class="top__vector top__vector_6" src="img/Star-mobile.png" alt="star">
+
+        </div>
+    </div>
+    <div class="running-line">
+            <p class="running-line__text">викторина</p>
+            <img class="running-line__img" src="img/Star.svg" alt="star">
+            <p class="running-line__text">угадай число</p>
+            <img class="running-line__img" src="img/Star.svg" alt="star">
+            <p class="running-line__text">Переверни текст</p>
+            <img class="running-line__img" src="img/Star.svg" alt="star">
+            <p class="running-line__text">Простая арифметика</p>
+            <img class="running-line__img" src="img/Star.svg" alt="star">
+            <p class="running-line__text">Камень, ножницы, бумага</p>
+            <img class="running-line__img" src="img/Star.svg" alt="star">
+            <p class="running-line__text">Генератор случайных цветов</p>
+            <img class="running-line__img" src="img/Star.svg" alt="star">
+        </div>
+
+    <section class="games__container center">
+        
+        <h2 class="games__title">Об играх</h2>
+        <p class="games__text">
+            В моей коллекции представлено 6 игр на разные темы.<br/>
+            Игры несложные — в них может поиграть каждый.<br/>
+            Все игры доступны для пользования.
+        </p>
+        <div class="card-box">
+            <img class="card-box-vector card-box-vector_1" src="img/Star-1.svg" alt="star">
+            <img class="card-box-vector card-box-vector_2" src="img/Star-11.png" alt="star">
+            <img class="card-box-vector card-box-vector_3" src="img/Star-12.png" alt="star">
+            <div class="card-box-1">
+                <a href="#game1" class="game-card">
+                    <div class="game-card__content">
+                        <img class="game-card__img" src="img/card-1.png" alt="card-1">
+                        <p class="game-card__number">Игра № 1</p>
+                        <h3 class="game-card__title">Угадай число</h3>
+                    </div>
+                </a>
+
+                <a href="#game2" class="game-card">
+                    <div class="game-card__content game-card__content_big">
+                        <img class="game-card__img" src="img/card-4.png" alt="card-4">
+                        <p class="game-card__number">Игра № 4</p>
+                        <h3 class="game-card__title">Камень, <br/> ножницы,<br/>бумага</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-box-1">
+                <a href="#game2" class="game-card">
+                    <div class="game-card__content game-card__content_middle">
+                        <img class="game-card__img" src="img/card-2.png" alt="card-2">
+                        <p class="game-card__number">Игра № 2</p>
+                        <h3 class="game-card__title">Простая <br/> арифметика</h3>
+                    </div>
+                </a>
+
+                <a href="#game2" class="game-card">
+                    <div class="game-card__content game-card__content_middle">
+                        <img class="game-card__img" src="img/card-5.png" alt="card-5">
+                        <p class="game-card__number">Игра № 5</p>
+                        <h3 class="game-card__title">Простая <br/> викторина</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-box-1">
+                <a href="#game3" class="game-card">
+                    <div class="game-card__content">
+                        <img class="game-card__img" src="img/card-3.png" alt="card-3">
+                        <p class="game-card__number">Игра № 3</p>
+                        <h3 class="game-card__title">Переверни текст</h3>
+                    </div>
+                </a>
+
+                <a href="#game2" class="game-card">
+                    <div class="game-card__content game-card__content_big">
+                        <img class="game-card__img" src="img/card-6.png" alt="card-6">
+                        <p class="game-card__number">Игра № 6</p>
+                        <h3 class="game-card__title">Генератор <br/> случайных <br/>цветов</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+   <script src="hw-4.js"></script>
+
 </body>
 </html>
