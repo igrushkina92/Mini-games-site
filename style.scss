@@ -15,8 +15,8 @@ $color-text:rgb(32, 32, 39);
   }
   
   .center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
+    padding-left: 120px;
+    padding-right: 120px;
   }
 
   html { overflow-x: hidden; }
@@ -31,6 +31,7 @@ $color-text:rgb(32, 32, 39);
             position: absolute;
             top: -334px;
             right: -488px;
+            overflow-x: hidden;
         }
          &_1 {
             position: absolute;
@@ -47,13 +48,13 @@ $color-text:rgb(32, 32, 39);
          &_3 {
             position: absolute;
             height: 83px;
-            left: 1013px;
+            right: 344px;;
             top: 568px;
          }
           &_4 {
             position: absolute;
             height: 37px;
-            left: 948px;
+           right: 455px;
             top: 538px;
          }
          &_6 {

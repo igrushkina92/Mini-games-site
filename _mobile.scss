@@ -1,13 +1,16 @@
 @media (max-width: 767px) {
 
-    center {
+    .center {
         padding-left: 16px;
         padding-right: 16px;
     }
 
+    html { overflow-x: hidden; }
+
     .top {
     height: 649px;
     position: relative;
+    overflow-x: hidden;
 
         &__vector {
             &_5 {
@@ -31,13 +34,13 @@
             &_3 {
                 position: absolute;
                 top: 580px;
-                right: 34px;
+                left: 303px;
                 height: 41px;
             }
             &_4 {
                 position: absolute;
                 top: 557px;
-                right: 86px;
+                left: 272px;
                 height: 18px;
             }
 
@@ -85,9 +88,10 @@
     }
 
     .running-line {
-        width: 1717px;
+
         height: 51px;
         gap: 27px;
+        overflow-x: hidden;
 
         &__text {
             font-size: 16px;
@@ -96,5 +100,15 @@
         &__img {
             height: 19px;
         }
+    }
+
+    .card-box {
+        &-vector {
+            display: none;
+        }
+    }
+
+    .games__container {
+        display:  none;
     }
 }
