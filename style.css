@@ -220,6 +220,11 @@ html {
   transform: scale(1.05);
 }
 
+.mini-game__all-games {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
 .mini-game__content {
   width: 1200px;
   height: 500px;

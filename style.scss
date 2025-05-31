@@ -239,7 +239,11 @@ $color-text:rgb(32, 32, 39);
   }
 
   .mini-game {
-        
+    &__all-games {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        }    
     &__content{
         width: 1200px;
         height: 500px;
