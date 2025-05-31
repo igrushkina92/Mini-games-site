@@ -15,8 +15,8 @@ $color-text:rgb(32, 32, 39);
   }
   
   .center {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
   }
 
   html { overflow-x: hidden; }
@@ -97,6 +97,7 @@ $color-text:rgb(32, 32, 39);
         &:hover {
             background: rgb(255, 255, 255);
             color: $color-text;
+            border: 1px solid rgb(0, 0, 0);
         }
     }
   }
@@ -142,6 +143,7 @@ $color-text:rgb(32, 32, 39);
         text-align: left;
         padding-top: 94px;
     }
+
     &__text {
         color: rgb(255, 255, 255);
         font-size: 24px;
@@ -235,6 +237,74 @@ $color-text:rgb(32, 32, 39);
         transform: scale(1.05);
     }
   }
+
+  .mini-game {
+        
+    &__content{
+        width: 1200px;
+        height: 500px;
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+       
+            &-text {
+                padding: 48px;
+                align-items: flex-start;
+                width: 600px;
+            }
+        }
+
+        &__title {
+            color: $color-text;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        
+        &__text {
+            color: $color-text;
+            max-width: 457px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 24px;
+            padding-bottom: 36px;
+        }
+
+        &__link {
+            border-radius: 60px;
+            background: $color-text;
+            width: 247px;
+            height: 66px;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &:hover {
+            background: rgb(255, 255, 255);
+            color: $color-text;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        }
+
+        &__img-right {
+        height: 500px;
+        }
+    }
+  
 
 
     @import "mobile";
