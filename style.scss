@@ -32,6 +32,7 @@ $color-text:rgb(32, 32, 39);
             top: -334px;
             right: -488px;
             overflow-x: hidden;
+            height: 1130px;
         }
          &_1 {
             position: absolute;
@@ -79,6 +80,7 @@ $color-text:rgb(32, 32, 39);
         letter-spacing: 0px;
         text-align: left;
         padding-top: 24px;
+       
     }
     &__link {
         width: 247px;
@@ -103,7 +105,7 @@ $color-text:rgb(32, 32, 39);
   }
 
   .running-line {
-        width: 3220px;
+        width: 100%;
         height: 90px;
         box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.2);
@@ -113,7 +115,9 @@ $color-text:rgb(32, 32, 39);
         flex-direction: row;
         align-items: center;
         gap: 51px;
-
+        overflow-x: hidden; 
+    
+        
         &__text {
             color: $color-text;
             font-size: 30px;
@@ -122,6 +126,7 @@ $color-text:rgb(32, 32, 39);
             letter-spacing: 4%;
             text-align: left;
             text-transform: uppercase;
+            white-space: nowrap;
         }
        
         &__img {
@@ -192,6 +197,7 @@ $color-text:rgb(32, 32, 39);
     gap: 32px;
     position: relative;
 
+
      &-vector {
             &_1 {
                 position: absolute;
@@ -227,7 +233,7 @@ $color-text:rgb(32, 32, 39);
   .game-card {
     z-index: 5;
     &__content {
-        width: 378px;
+        // width: 378px;
         height: 473px;
         border-radius: 30px;
         background-color: rgb(255, 255, 255);
@@ -277,7 +283,7 @@ $color-text:rgb(32, 32, 39);
         padding-bottom: 144px;
         }    
     &__content{
-        width: 1200px;
+        width: 100%;
         height: 500px;
         border-radius: 30px;
         box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
