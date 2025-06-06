@@ -131,4 +131,64 @@
             text-align: left;
         }    
 }
+    .mini-game {
+        &__all-games {
+            gap: 24px;
+        }
+
+        &__content {
+             min-height: 564px;
+             max-height: 626px;
+             width: 343px;
+             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-text {
+                order: 2;
+                padding: 29px;
+            }
+        }
+
+        &__img-right {
+           order:1; 
+           height: 284px;
+
+        
+        }
+         
+        &__title {
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 39px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 16px;
+            padding-bottom: 32px;
+        }
+
+        &__link {
+            width: 285px;
+            height: 55px;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+          
+            
+            
+           
+        
+        }
+    }
 }
