@@ -135,6 +135,7 @@
         &__all-games {
             gap: 24px;
             align-items: center;
+            padding-bottom: 10px;
         }
 
         &__content {
@@ -191,11 +192,17 @@
             line-height: 141.69%;
             letter-spacing: 0%;
             text-align: center;
-          
-            
+               
             
            
         
+        }
+    }
+    .footer {
+        height: 100px;
+
+        &__text {
+        font-size: 16px;
         }
     }
 }
