@@ -434,9 +434,10 @@ html {
   }
   .mini-game__all-games {
     gap: 24px;
+    align-items: center;
   }
   .mini-game__content {
-    min-height: 564px;
+    height: inherit;
     max-height: 626px;
     width: 343px;
     display: flex;
@@ -446,6 +447,10 @@ html {
   .mini-game__content-text {
     order: 2;
     padding: 29px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 285px;
   }
   .mini-game__img-right {
     order: 1;

@@ -134,11 +134,14 @@
     .mini-game {
         &__all-games {
             gap: 24px;
+            align-items: center;
         }
 
         &__content {
-             min-height: 564px;
-             max-height: 626px;
+            //  min-height: 528px;
+            //  max-height: 626px;
+            height: inherit;
+            max-height: 626px;
              width: 343px;
              display: flex;
             flex-direction: column;
@@ -147,6 +150,10 @@
             &-text {
                 order: 2;
                 padding: 29px;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                width: 285px;
             }
         }
 
