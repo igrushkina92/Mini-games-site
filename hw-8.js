@@ -86,3 +86,98 @@
 // console.log (str);
 
 
+// // Задание 9
+
+
+// const arr = [[1, 2, 3],[4, 5, 6]];
+
+// const newArr = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//    newArr.push (...arr[i]) ;
+// }
+
+// console.log(newArr);
+
+
+// // Задание 10
+
+// const arr = [1,2,3,4,5,6,7,8,9,10];
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr [i+1]) {
+//     console.log (arr[i] + arr[i+1]);
+//     }
+// }
+
+
+
+// // Задание 11
+
+// function square(arr) {
+//     return arr.map (item => item ** 2);
+// }
+
+// console.log (square([1,2,3]));
+
+
+
+// // Задание 12
+
+// function getLength(arr) {
+//      return arr.map (item => item.length);
+// }
+
+// console.log (getLength(['hi','world']));
+
+
+// // Задание 13
+
+
+// function negativeNumbers (arr) {
+//     return arr.filter (item => item < 0);
+// }
+
+// console.log(negativeNumbers([1,8.4,-5,-7,3,-8]));
+
+
+// // Задание 14
+
+// function randomNumber (){
+//     return Math.floor(Math.random() * 10);
+// }
+
+// const arr= [];
+
+// for (let i = 0; i < 10; i++) {
+//     arr.push(randomNumber());
+// }
+
+// console.log (arr);
+
+// const evenArr = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 === 0) {
+//         evenArr.push(arr[i]);
+//     }
+// }
+
+// console.log (evenArr);
+
+
+
+// // Задание 15
+
+// function randomNumber (){
+//     return Math.floor(Math.random() * 10);
+// }
+
+// const arr= [];
+
+// for (let i = 0; i < 10; i++) {
+//     arr.push(randomNumber());
+// }
+
+// console.log (arr);
+
+// console.log(arr.reduce ((a,b) => a+b) / arr.length);
