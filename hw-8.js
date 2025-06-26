@@ -26,14 +26,63 @@
 // console.log(joinedNumber);
 
 
-// Задание 4
+// // Задание 4
 
-const arr = [];
-for (let i = 0; i < 3; i++)  {
-    const arr2 = [];
-    for (let i = 0; i < 3; i++) {
-        arr2.push(1);
-    }
-    arr.push(arr2);
-}
-console.log(arr);
+// const arr = [];
+// for (let i = 0; i < 3; i++)  {
+//     const arr2 = [];
+//     for (let i = 0; i < 3; i++) {
+//         arr2.push(1);
+//     }
+//     arr.push(arr2);
+// }
+// console.log(arr);
+
+
+// // Задание 5
+
+// const arr = [1, 1, 1];
+
+// arr.push (2,2,2);
+
+// console.log(arr);
+
+
+
+// // Задание 6
+
+// const arr = [9, 8, 7, 'a', 6, 5];
+
+// arr.sort ();
+
+// console.log(arr);
+
+// const filteredArr = arr.filter(arr => arr  !== 'a');
+
+// console.log(filteredArr);
+
+
+// // Задание 7
+
+// const arr = [9, 8, 7, 6, 5];
+
+// const userNumber = +prompt ('Введите число');
+
+// if (arr.includes(userNumber)) {
+//     alert ('Угадал');
+// } else {
+//     alert ('Не угадал');
+// }
+
+
+
+// // Задание 8
+
+// let str = 'abcdef';
+// str = str.split ('');
+// console.log (str);
+// str.reverse ();
+// str = str.join ('');
+// console.log (str);
+
+
