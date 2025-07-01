@@ -5,6 +5,7 @@
 // console.log (str);
 
 
+
 // // Задание 2
 
 // function filter(arr, str) {
@@ -14,3 +15,96 @@
 // }
 
 // console.log (filter(['JavaScript', 'Java', 'Pithon'], 'ja'))
+
+
+
+// // Задание 3
+
+// let num = 32.58884;
+// console.log(Math.floor(num));
+// console.log(Math.ceil(num));
+// console.log(Math.round(num));
+
+
+
+
+// // Задание 4
+
+// console.log(Math.min(52, 53, 49, 77, 21, 32));
+// console.log(Math.max(52, 53, 49, 77, 21, 32));
+
+
+
+
+// // Задание 5
+
+// function randomNum () {
+//     return Math.floor(Math.random() * 10) + 1;
+// }
+
+// console.log (randomNum());
+
+
+
+
+// // Задание 6
+
+// function randomNum (num) {
+//    let arr = [];
+//    for (let i = 0; i < num; i++) {
+//     arr.push(Math.floor(Math.random() * num));
+//    } 
+//    return arr;
+// }
+
+// console.log (randomNum(10));
+
+
+
+
+// // Задание 7
+
+// function randomNum (min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+
+// console.log (randomNum(6,18));
+
+
+
+
+// // Задание 8
+
+// console.log (new Date ());
+
+
+
+
+// // Задание 9
+
+// const currentDate = new Date ();
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log (currentDate);
+
+
+
+
+// // Задание 10
+
+// function formatDate (date) {
+//     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+//     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+//     const year = date.getFullYear();
+//     const day = date.getDate();
+//     const month = date.getMonth();
+//     const dayOfWeek = days[date.getDay()];
+//     const hours = date.getHours();
+//     const minutes = date.getMinutes();
+//     const seconds = date.getSeconds();
+
+//     return `
+//     Дата: ${day} ${months[month]} ${year} это ${dayOfWeek}.
+//     Время: ${hours}:${minutes}:${seconds}}`;
+
+// }
+// console.log (formatDate(new Date()));
