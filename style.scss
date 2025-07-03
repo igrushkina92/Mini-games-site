@@ -15,23 +15,24 @@ $color-text:rgb(32, 32, 39);
   }
   
   .center {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
   }
 
-  html { overflow-x: hidden; }
+  html { overflow: auto; }
 
   .top {
     height: 710px;
     background-color: rgb(225, 255, 143);
     position: relative;
+    overflow: hidden;
 
     &__vector {
         &_5 {
             position: absolute;
             top: -334px;
             right: -488px;
-            overflow-x: hidden;
+            height: 1130px;
         }
          &_1 {
             position: absolute;
@@ -79,6 +80,7 @@ $color-text:rgb(32, 32, 39);
         letter-spacing: 0px;
         text-align: left;
         padding-top: 24px;
+       
     }
     &__link {
         width: 247px;
@@ -97,22 +99,37 @@ $color-text:rgb(32, 32, 39);
         &:hover {
             background: rgb(255, 255, 255);
             color: $color-text;
+            border: 1px solid rgb(0, 0, 0);
         }
     }
   }
 
   .running-line {
-        width: 3220px;
+        overflow: hidden; 
+        width: 100%;
         height: 90px;
+        display: flex;
         box-sizing: border-box;
         border: 1px solid rgba(255, 255, 255, 0.2);
+        -webkit-backdrop-filter: blur(50px);
         backdrop-filter: blur(50px);
         background: rgb(188, 236, 48);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 51px;
 
+        &__innner {
+            display: flex;
+            align-items: center;
+            gap: 51px;        
+            white-space: nowrap;
+            will-change: transform;
+            animation: move 10s linear infinite;
+        }
+
+       @keyframes move {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+    
+        
         &__text {
             color: $color-text;
             font-size: 30px;
@@ -121,6 +138,7 @@ $color-text:rgb(32, 32, 39);
             letter-spacing: 4%;
             text-align: left;
             text-transform: uppercase;
+            white-space: nowrap;
         }
        
         &__img {
@@ -131,6 +149,9 @@ $color-text:rgb(32, 32, 39);
   .games {
     &__container {
         background: rgb(32, 32, 39);
+        position: relative;
+       overflow: auto;
+
 
     }
     &__title {
@@ -142,6 +163,7 @@ $color-text:rgb(32, 32, 39);
         text-align: left;
         padding-top: 94px;
     }
+
     &__text {
         color: rgb(255, 255, 255);
         font-size: 24px;
@@ -150,6 +172,33 @@ $color-text:rgb(32, 32, 39);
         letter-spacing: 0px;
         text-align: left;
         margin-top: 24px;
+    }
+
+    &__vector {
+         &_1 {
+            position: absolute;
+            top: 126px;
+            right: 45px;
+            height: 69px;
+        }
+        &_2 {
+            position: absolute;
+            top: 93px;
+            right: 124px;
+            height: 35px;
+        }
+         &_3 {
+            position: absolute;
+            bottom: 65px;
+            right: 52px;
+            height: 69px;
+        }
+        &_4 {
+            position: absolute;
+            bottom: 45px;;
+            right: 150px;
+            height: 35px;
+        }
     }
   }
  
@@ -160,6 +209,7 @@ $color-text:rgb(32, 32, 39);
     flex-direction: row;
     gap: 32px;
     position: relative;
+    
 
      &-vector {
             &_1 {
@@ -182,6 +232,7 @@ $color-text:rgb(32, 32, 39);
                 height: 54.6px;
             
             }
+            
         }
 
     &-1 {
@@ -195,7 +246,7 @@ $color-text:rgb(32, 32, 39);
   .game-card {
     z-index: 5;
     &__content {
-        width: 378px;
+       
         height: 473px;
         border-radius: 30px;
         background-color: rgb(255, 255, 255);
@@ -236,5 +287,97 @@ $color-text:rgb(32, 32, 39);
     }
   }
 
+  .mini-game {
+    &__all-games {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        margin-top: 72px;
+        padding-bottom: 144px;
+        }    
+    &__content{
+        width: 100%;
+       
+        border-radius: 30px;
+        box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+        background: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: row;
+       
+            &-text {
+                padding: 48px;
+                align-items: flex-start;
+                width: 600px;
+            }
+        }
+
+        &__title {
+            color: $color-text;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 59px;
+            letter-spacing: 0px;
+            text-align: left;
+        }
+        
+        &__text {
+            color: $color-text;
+            max-width: 457px;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            padding-top: 24px;
+            padding-bottom: 36px;
+        }
+
+        &__link {
+            border-radius: 60px;
+            background: $color-text;
+            width: 247px;
+            height: 66px;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 141.69%;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &:hover {
+            background: rgb(255, 255, 255);
+            color: $color-text;
+            border: 1px solid rgb(0, 0, 0);
+        }
+        }
+
+        &__img-right {
+        height: 500px;
+        }
+    }
+  
+    .footer {
+        height: 150px;
+        background: rgb(189, 237, 53);
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+  
+    
+        &__text{
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            letter-spacing: 0px;
+            text-align: center;
+        }
+    }
+
 
     @import "mobile";
+    @import "tablet";
