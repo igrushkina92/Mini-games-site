@@ -26,11 +26,11 @@ function simpleArithmetic() {
 
             case '/':
             userAnswer = prompt (`${a} разделить на ${b}`);
-            result = a / b;
+            result = Math.ceil(a / b);
             break;
     }
 
-        userAnswer = parseInt( userAnswer);
+        userAnswer = parseInt(userAnswer);
 
     if (userAnswer ===  result) {
         alert (`Это верный ответ!`);
