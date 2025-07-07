@@ -45,3 +45,43 @@ const allDescriptions4 = document.querySelectorAll('.description4');
 allDescriptions4.forEach(description4 => {
    description4.textContent = 'Измененный текст';
 });
+
+
+
+
+// Задание 5
+
+const allDescriptions5 = document.querySelectorAll('.description5');
+
+allDescriptions5.forEach(description5 => {
+   description5.textContent = 'НОВЫЙ ТЕКСТ';
+});
+
+
+
+
+// Задание 6
+
+const button6 = document.querySelector('.button6');
+const description6 = document.querySelector('.description6');
+
+button6.addEventListener('click', () => {
+    const newText6 = document.createElement('p');
+    newText6.textContent = 'Новый абзац';
+    newText6.classList.add ('text');
+    description6.appendChild (newText6);
+});
+
+
+
+
+
+// Задание 7
+
+const button7 = document.querySelector('.button7');
+const description7 = document.querySelector('.description7');
+
+button7.addEventListener('click', () => {
+   description7.remove();
+
+});
