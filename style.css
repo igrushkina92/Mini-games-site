@@ -143,7 +143,7 @@ html {
 .games__container {
   background: rgb(32, 32, 39);
   position: relative;
-  overflow: auto;
+  overflow: hidden;
 }
 .games__title {
   color: rgb(255, 255, 255);
