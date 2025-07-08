@@ -7,8 +7,13 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: rgb(32, 32, 39);
 }
 
 .center {
@@ -141,7 +146,6 @@ html {
 }
 
 .games__container {
-  background: rgb(32, 32, 39);
   position: relative;
   overflow: hidden;
 }
@@ -541,8 +545,8 @@ html {
     line-height: 40px;
   }
   .mini-game__text {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 14px;
+    line-height: 24px;
     padding-top: 12px;
     padding-bottom: 18px;
   }
