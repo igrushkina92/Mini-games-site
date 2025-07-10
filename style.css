@@ -11,6 +11,10 @@ button {
   cursor: pointer;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   background-color: rgb(32, 32, 39);
@@ -226,6 +230,7 @@ html {
 
 .game-card {
   z-index: 5;
+  transition: transform 0.3s ease;
 }
 .game-card__content {
   height: 473px;
