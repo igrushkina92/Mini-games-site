@@ -1,0 +1,64 @@
+@media (min-width: 678px) and (max-width: 1199px) {
+.center {
+    padding-left: calc(50% - 393px);
+    padding-right: calc(50% - 393px);
+}
+
+ .top {
+     &__vector {
+            &_5 {
+                display: none;
+            }
+ }
+}
+
+.running-line {
+        width: 100%;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+
+     &-vector {
+        display: none;
+        }
+
+    &-1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        }
+    }
+
+.game-card {
+    &__content {
+        height: 551px;
+    }
+}
+.mini-game {
+    &__content {
+   
+
+        &-text {
+            padding: 36px;
+        }
+    }
+
+    &__img-right {
+        height: 350px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 24px;
+        padding-top: 12px;
+        padding-bottom: 18px;   
+    }
+}
+}
